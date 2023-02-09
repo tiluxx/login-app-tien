@@ -28,7 +28,7 @@ The `controllers` folder holds some functions defined to process the request and
     - Run the command `cd functions`.
     - Then run the command `npm run serve` to run the backend API. 
     - When the terminal screen look like this, copy the link in line pointed by cursor.
-    - !['backend Git Bash' screen](./screenshots/backendAPI.png)
+    !['backend Git Bash' screen](./screenshots/backendAPI.png)
     - Open `axiosConfig.js` in the `src` folder in the `client` folder and paste the link in `baseURL` like the following code.
     ```javascript
     import axios from 'axios'
