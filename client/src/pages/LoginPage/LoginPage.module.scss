@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    padding: 10px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #7a7a7a;
+}
+
+.message {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 12px;
+    transition: 0.25s;
+    
+    &.processing {
+        color: #096bde;
+        background-color: #d1e6ff;
+    }
+
+    &.success {
+        color: #fffbfe;
+        background-color: #1fdd5f;
+    }
+
+    &.error {
+        color: #fffbfe;
+        background-color: #f03333;
+    }
+}
