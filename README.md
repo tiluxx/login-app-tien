@@ -21,6 +21,7 @@ The `controllers` folder holds some functions defined to process the request and
 ## How to run it
 > Due to the trial account from firebase and twilio, I have some notices:
 > * We have to change some code lines to run the project.
+> * Due to the free firebase account, I cannot deploy API endpoints for the frontend. You have to create your own Cloud Firestone Database to use the database with the instruction bellow.
 > * Due to the free twilio phone number, the message contains access code may not be sent globally. In this case, there is an access code printed in the terminal screen (From Git Bash run the backend API) in order to illustrate the process.
 
 1. Open Git Bash in the root of the project.
@@ -42,6 +43,13 @@ The `controllers` folder holds some functions defined to process the request and
 3. Open `auth.js` in the `controllers` folder in the `functions` folder.
     - Paste your twilio phone number in the property "from" in the line 59.
 
-4. Open other Git Bash in the root of the project.
+4. To use the database:
+    - Create project on firebase
+    - Create Cloud Firestone Database
+    - Then choose Settings -> Project settings -> Service accounts -> Generate new private key
+    - Copy content from downloaded file
+    - Paste it in `firebase-adminsdk.json` file in the `functions` folder to use the database
+
+5. Open other Git Bash in the root of the project.
     - Run the command `cd client`.
-    - Then run the command `npm start` to run the frontend application. 
+    - Then run the command `npm start` to run the frontend application.
